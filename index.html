@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adrian König</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      color: #1a1a1a;
+      background: #fafafa;
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px 80px;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      margin-bottom: 48px;
+    }
+
+    .header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      filter: grayscale(100%);
+    }
+
+    .header-text h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 4px;
+    }
+
+    .header-text .subtitle {
+      font-size: 15px;
+      color: #555;
+    }
+
+    .header-text .subtitle a {
+      color: #555;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .header-text .subtitle a:hover {
+      color: #1a1a1a;
+    }
+
+    /* Bio */
+    .bio {
+      font-size: 16px;
+      color: #333;
+      margin-bottom: 48px;
+    }
+
+    /* Sections */
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: #999;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 8px;
+    }
+
+    /* Education entries */
+    .entry {
+      margin-bottom: 16px;
+    }
+
+    .entry .title {
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    .entry .meta {
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* Publications */
+    .publication {
+      margin-bottom: 14px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .publication .pub-title {
+      font-style: italic;
+    }
+
+    .publication .pub-source {
+      color: #666;
+    }
+
+    .publication .pub-source a {
+      color: #666;
+      text-underline-offset: 3px;
+    }
+
+    .publication .pub-source a:hover {
+      color: #1a1a1a;
+    }
+
+    .publication .pub-download {
+      display: inline-block;
+      margin-left: 6px;
+      font-size: 12px;
+      color: #1a1a1a;
+      text-decoration: none;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: 1px 6px;
+      vertical-align: middle;
+    }
+
+    .publication .pub-download:hover {
+      background: #1a1a1a;
+      color: #fff;
+      border-color: #1a1a1a;
+    }
+
+    /* Contact */
+    .contact a {
+      color: #1a1a1a;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .contact a:hover {
+      color: #555;
+    }
+
+    /* Responsive */
+    @media (max-width: 520px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      }
+      .container {
+        padding: 40px 20px 60px;
+      }
+      .header-text h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <img src="profile.jpg" alt="Adrian König">
+      <div class="header-text">
+        <h1>Adrian König</h1>
+        <p class="subtitle">Ph.D. Candidate, University of Bern<br>
+          <a href="https://www.linkedin.com/in/akoe">LinkedIn</a><br>
+          Based in Zurich Metropolitan Area
+        </p>
+      </div>
+    </div>
+
+    <p class="bio">
+      Adrian König is a Ph.D. candidate at the Institute of International Private Law and Procedural Law at the University of Bern. His research focuses on data-science driven litigation.
+    </p>
+
+    <div class="section">
+      <h2>Education</h2>
+
+      <div class="entry">
+        <div class="title">Ph.D. in Law</div>
+        <div class="meta">University of Bern &middot; since 2025</div>
+      </div>
+
+      <div class="entry">
+        <div class="title">M.Sc. in Business Administration, Corporate Finance</div>
+        <div class="meta">University of Bern &middot; 2024 – 2026</div>
+      </div>
+
+      <div class="entry">
+        <div class="title">Certificate of Advanced Studies in International Law and Economics</div>
+        <div class="meta">World Trade Institute (WTI) &middot; 2023 – 2024</div>
+      </div>
+
+      <div class="entry">
+        <div class="title">Master of Law (MLaw) with extracurricular BSc Mn. in Business Administration</div>
+        <div class="meta">University of Bern &middot; 2023 – 2024</div>
+      </div>
+
+      <div class="entry">
+        <div class="title">Bachelor of Law (BLaw)</div>
+        <div class="meta">University of Bern &middot; 2018 – 2023</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Publications</h2>
+
+      <div class="publication">
+        <span class="pub-title">Der englische «Letter before Action» – Systematik, Funktion und mögliche Auswirkungen im schweizerischen Zivilverfahren</span><br>
+        <span class="pub-source">Adrian König/Robert Bradshaw &middot; ZZZ 72/2025, 361–371</span>
+      </div>
+
+      <div class="publication">
+        <span class="pub-title">Private Claimants in Swiss Money Laundering Proceedings: Unlocking Evidence and Freezing Assets</span><br>
+        <span class="pub-source">Benoît Mauron/Adam El-Hakim/Adrian König &middot; <a href="https://www.lexology.com/search?q=Private+Claimants+Swiss+Money+Laundering+LALIVE" target="_blank">Lexology (online)</a>, 14 August 2025</span>
+      </div>
+
+      <div class="publication">
+        <span class="pub-title">Gen-Z drängt ins Recht: Erste empirische Insights</span><br>
+        <span class="pub-source">Adrian König/Roman Wixinger &middot; LAWSTYLE Nr. 19, 2025, 8–11</span>
+        <a class="pub-download" href="publications/koenig-wixinger-lawstyle-2025.pdf" download>PDF</a>
+      </div>
+
+      <div class="publication">
+        <span class="pub-title">Swiss Law Students' Employer Expectations – A First Empirical Insight</span><br>
+        <span class="pub-source">Adrian König/Roman Wixinger &middot; Jusletter, 12 May 2025</span>
+        <a class="pub-download" href="publications/koenig-wixinger-jusletter-05-2025.pdf" download>PDF</a>
+      </div>
+
+      <div class="publication">
+        <span class="pub-title">Corporate Climate Litigation – Klimahaftungsklagen gegen Unternehmen im Kontext des internationalen Zivilverfahrens- und Privatrechts</span><br>
+        <span class="pub-source">Adrian König/Benjamin Sommerhalder &middot; AJP/PJA 3/2025, 261–273</span>
+        <a class="pub-download" href="publications/koenig-sommerhalder-ajp-03-2025.pdf" download>PDF</a>
+      </div>
+
+      <div class="publication">
+        <span class="pub-title">Fristenwirrwarr bei der Auskunfts- und Einsichtsklage (Art. 697b OR)</span><br>
+        <span class="pub-source">Adrian König/André Brunschweiler &middot; <a href="https://www.legalis.ch/de/legalis-brief/gesellschaftsrecht/fristenwirrwarr-bei-der-auskunfts-und-einsichtsklage-art-697b-or/" target="_blank">legalis brief GesR 2/25</a>, Leitartikel</span>
+      </div>
+
+      <div class="publication">
+        <span class="pub-title">Verfahrensleitung an der Generalversammlung – Vorschläge zum Umgang mit mehreren Anträgen</span><br>
+        <span class="pub-source">Marc Hanslin/Adrian König &middot; <a href="https://www.legalis.ch/de/legalis-brief/gesellschaftsrecht/verfahrensleitung-an-der-generalversammlung-vorschlaege-zum-umgang-mit-mehreren-antraegen/" target="_blank">legalis brief GesR 7/24</a>, Leitartikel</span>
+      </div>
+
+      <div class="publication">
+        <span class="pub-title">Grenzen der ehelichen Verfügungsbeschränkung – BGer 5A_503/2023 vom 15. Juli 2024</span><br>
+        <span class="pub-source">Adrian König &middot; Ius focus 10/2024, Nr. 243</span>
+        <a class="pub-download" href="publications/ius-focus-2024-nr-243.pdf" download>PDF</a>
+      </div>
+
+      <div class="publication">
+        <span class="pub-title">Iudex non calculat? Synthese von Recht und Mathematik</span><br>
+        <span class="pub-source">Adrian König/Roman Wixinger/Cornelia Stengel &middot; Jusletter, 9 September 2024</span>
+        <a class="pub-download" href="publications/iudex-non-calculat-2024.pdf" download>PDF</a>
+      </div>
+
+      <div class="publication">
+        <span class="pub-title">Holacracy: Management ohne Manager? Aktienrechtliche Verantwortlichkeit, Geschäftsführung und Compliance-Risiken in holokratisch strukturierten Gesellschaften</span><br>
+        <span class="pub-source">Adrian König &middot; GesKR 3/2024, 417–426</span>
+        <a class="pub-download" href="publications/koenig-holacracy-gesk-r-03-2024.pdf" download>PDF</a>
+      </div>
+
+      <div class="publication">
+        <span class="pub-title">Bundesgericht, I. öffentlich-rechtliche Abteilung, Urteil 1B_174/2023 vom 21. April 2023</span><br>
+        <span class="pub-source">Adrian König &middot; AJP/PJA 6/2024, 620–624</span>
+        <a class="pub-download" href="publications/koenig-ajp-06-2024.pdf" download>PDF</a>
+      </div>
+
+      <div class="publication">
+        <span class="pub-title">Décharge und Corporate Governance</span><br>
+        <span class="pub-source">Adrian König &middot; GesKR 4/2023, 496–504</span>
+        <a class="pub-download" href="publications/koenig-gesk-r-04-2023.pdf" download>PDF</a>
+      </div>
+
+      <div class="publication">
+        <span class="pub-title">Prozessieren gegen Lloyd's Syndikate – BGer 4A_323/2022 vom 5. Dezember 2022</span><br>
+        <span class="pub-source">Laura Manz/Adrian König &middot; Ius focus 3/2023, Nr. 67</span>
+        <a class="pub-download" href="publications/ius-focus-2023-nr-67.pdf" download>PDF</a>
+      </div>
+    </div>
+
+    <div id="downloads" class="section">
+      <h2>Downloads</h2>
+      <p style="font-size: 14px; color: #666;">No downloads available at this time.</p>
+    </div>
+
+    <div class="section contact">
+      <h2>Contact</h2>
+      <p><a href="https://www.linkedin.com/in/akoe">LinkedIn</a></p>
+    </div>
+
+  </div>
+</body>
+</html>
