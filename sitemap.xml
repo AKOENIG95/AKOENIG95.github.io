@@ -12,4 +12,34 @@
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://akoenig95.github.io/publications/koenig-wixinger-lawstyle-2025.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://akoenig95.github.io/publications/koenig-sommerhalder-ajp-03-2025.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://akoenig95.github.io/publications/koenig-holacracy-gesk-r-03-2024.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://akoenig95.github.io/publications/koenig-ajp-06-2024.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://akoenig95.github.io/publications/koenig-gesk-r-04-2023.html</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>never</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>
