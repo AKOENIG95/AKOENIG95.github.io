@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://akoenig95.github.io/sitemap.xml
+Sitemap: https://adriankoenig.ch/sitemap.xml
