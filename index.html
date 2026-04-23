@@ -20,10 +20,13 @@
   <meta property="og:locale" content="en_US">
 
   <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Adrian König – CIVPRO &amp; Data-Science Driven Litigation Research">
   <meta name="twitter:description" content="Adrian König – Ph.D. candidate at CIVPRO">
   <meta name="twitter:image" content="https://adriankoenig.ch/og-image.jpg">
+
+  <!-- Preload LCP image -->
+  <link rel="preload" as="image" href="profile.jpg">
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -56,237 +59,24 @@
     ]
   }
   </script>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-
-    a {
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    body {
-      font-family: 'Georgia', 'Times New Roman', serif;
-      color: #1a1a1a;
-      background: #fafafa;
-      line-height: 1.7;
-    }
-
-    .container {
-      max-width: 720px;
-      margin: 0 auto;
-      padding: 60px 24px 80px;
-    }
-
-    /* Header */
-    .header {
-      display: flex;
-      align-items: center;
-      gap: 32px;
-      margin-bottom: 48px;
-    }
-
-    .header img {
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
-      object-fit: cover;
-      filter: grayscale(100%);
-    }
-
-    .header-text h1 {
-      font-size: 28px;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      margin-bottom: 4px;
-    }
-
-    .header-text .subtitle {
-      font-size: 15px;
-      color: #555;
-    }
-
-    .header-text .subtitle a {
-      color: #555;
-      text-decoration: none;
-    }
-
-    .header-text .subtitle a:hover {
-      color: #1a1a1a;
-    }
-
-    /* Bio */
-    .bio {
-      font-size: 16px;
-      color: #333;
-      margin-bottom: 48px;
-    }
-
-    .bio a {
-      color: #333;
-      text-decoration: none;
-    }
-
-    .bio a:hover {
-      color: #1a1a1a;
-    }
-
-    /* Sections */
-    .section {
-      margin-bottom: 48px;
-    }
-
-    .section h2 {
-      font-size: 14px;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      color: #999;
-      margin-bottom: 20px;
-      border-bottom: 1px solid #e0e0e0;
-      padding-bottom: 8px;
-    }
-
-    /* Education entries */
-    .entry {
-      margin-bottom: 16px;
-    }
-
-    .entry .title {
-      font-size: 15px;
-      font-weight: 550;
-    }
-
-    .entry .meta {
-      font-size: 14px;
-      color: #666;
-    }
-
-    /* Publications */
-    .publication {
-      margin-bottom: 14px;
-      font-size: 14px;
-      line-height: 1.6;
-    }
-
-    .publication .pub-title {
-      font-style: italic;
-    }
-
-    .publication .paywall {
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      margin-left: 5px;
-      color: #b5b5b5;
-      vertical-align: baseline;
-      stroke: currentColor;
-      fill: none;
-      cursor: help;
-    }
-
-    .publication .pub-source {
-      color: #666;
-    }
-
-    .publication .pub-source a {
-      color: #666;
-    }
-
-    .publication .pub-source a:hover {
-      color: #1a1a1a;
-    }
-
-    .publication .pub-download {
-      display: inline-block;
-      margin-left: 6px;
-      font-size: 12px;
-      color: #1a1a1a;
-      text-decoration: none;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-      padding: 1px 6px;
-      vertical-align: middle;
-    }
-
-    .publication .pub-download:hover {
-      background: #1a1a1a;
-      color: #fff;
-      border-color: #1a1a1a;
-    }
-
-    /* Video links */
-    .pub-links {
-      margin-top: 6px;
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-
-    .pub-video {
-      display: inline-block;
-      font-size: 13px;
-      color: #666;
-      background: transparent;
-      text-decoration: none;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      padding: 3px 10px;
-    }
-
-    .pub-video:hover {
-      background: #f0f0f0;
-      color: #1a1a1a;
-    }
-
-    /* Downloads */
-    .download-link {
-      font-size: 15px;
-      font-weight: 600;
-      color: #1a1a1a;
-    }
-
-    /* Contact */
-    .contact a {
-      color: #1a1a1a;
-      text-decoration: none;
-    }
-
-    .contact a:hover {
-      color: #555;
-    }
-
-    /* Responsive */
-    @media (max-width: 520px) {
-      .header {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-      }
-      .container {
-        padding: 40px 20px 60px;
-      }
-      .header-text h1 {
-        font-size: 24px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="container">
 
     <header class="header">
-      <img src="profile.jpg" alt="Adrian König – Ph.D. candidate in Civil Procedure (CIVPRO) at the University of Bern, data-science driven litigation research" loading="lazy">
+      <img src="profile.jpg" alt="Adrian König" width="130" height="130">
       <div class="header-text">
         <h1>Adrian König</h1>
         <p class="subtitle">Ph.D. Candidate, University of Bern<br>
           Based in Zurich Metropolitan Area<br>
-          <a href="https://www.linkedin.com/in/akoe" rel="me">LinkedIn</a> &middot; <a href="https://orcid.org/0009-0004-1671-4566" target="_blank" rel="me">ORCID</a>
+          <a href="https://www.linkedin.com/in/akoe" rel="me">LinkedIn</a> &middot; <a href="https://orcid.org/0009-0004-1671-4566" target="_blank" rel="me noopener noreferrer">ORCID</a>
         </p>
       </div>
     </header>
 
     <p class="bio">
-      PhD candidate at the <a href="https://www.civpro.unibe.ch/index_eng.html" target="_blank">Institute for Private International Law and Civil Procedure (CIVPRO)</a>, University of Bern, researching data-science driven litigation. Currently preparing for the bar exam of the Canton of Zurich. Founder of the <a href="https://academicsurfclub.ch" target="_blank">Academic Surf Club</a> and former <a href="https://adriankoenig.ch/honors.html">top-level athlete</a>.
+      PhD candidate at the <a href="https://www.civpro.unibe.ch/index_eng.html" target="_blank" rel="noopener noreferrer">Institute for Private International Law and Civil Procedure (CIVPRO)</a>, University of Bern, researching data-science driven litigation. Currently preparing for the bar exam of the Canton of Zurich. Founder of the <a href="https://academicsurfclub.ch" target="_blank" rel="noopener noreferrer">Academic Surf Club</a> and former <a href="https://adriankoenig.ch/honors.html">top-level athlete</a>.
     </p>
 
     <section class="section">
@@ -334,27 +124,27 @@
 
       <div class="publication">
         <span class="pub-title">Legal Information Extraction with Large Language Models</span><br>
-        <span class="pub-source">Adrian König &middot; <a href="https://www.ergon.ch/de/ueber-ergon/team/roman-wixinger" target="_blank">Roman Wixinger</a> &middot; <a href="https://www.linkedin.com/in/philip-pawlowsky-9494171b4/" target="_blank">Philip Pawlowsky</a> &middot; <a href="https://www.linkedin.com/in/daniel-tscheraghsepehr-5b0461267/" target="_blank">Daniel Tscheraghsepehr</a> &middot; <a href="https://www.linkedin.com/in/arnehol/" target="_blank">Arne Holicki</a> &middot; In preparation</span>
+        <span class="pub-source">Adrian König &middot; <a href="https://www.ergon.ch/de/ueber-ergon/team/roman-wixinger" target="_blank" rel="noopener noreferrer">Roman Wixinger</a> &middot; <a href="https://www.linkedin.com/in/philip-pawlowsky-9494171b4/" target="_blank" rel="noopener noreferrer">Philip Pawlowsky</a> &middot; <a href="https://www.linkedin.com/in/daniel-tscheraghsepehr-5b0461267/" target="_blank" rel="noopener noreferrer">Daniel Tscheraghsepehr</a> &middot; <a href="https://www.linkedin.com/in/arnehol/" target="_blank" rel="noopener noreferrer">Arne Holicki</a> &middot; In preparation</span>
       </div>
 
       <div class="publication">
         <span class="pub-title">Quantifying Litigation Costs: A Comprehensive Comparison of Court Costs and Party Compensation in Swiss Ordinary Civil Proceedings</span><br>
-        <span class="pub-source">Adrian König &middot; <a href="https://www.vwi.unibe.ch/ueber_uns/personen/leutenegger_wjera_yell/index_ger.html" target="_blank">Wjera Leutenegger</a> &middot; Forthcoming in Jusletter, Autumn 2026</span>
+        <span class="pub-source">Adrian König &middot; <a href="https://www.vwi.unibe.ch/ueber_uns/personen/leutenegger_wjera_yell/index_ger.html" target="_blank" rel="noopener noreferrer">Wjera Leutenegger</a> &middot; Forthcoming in Jusletter, Autumn 2026</span>
       </div>
 
       <div class="publication">
         <span class="pub-title">Margin Calls</span><br>
-        <span class="pub-source">Adrian König &middot; <a href="https://www.vwi.unibe.ch/ueber_uns/personen/leutenegger_wjera_yell/index_ger.html" target="_blank">Wjera Leutenegger</a> &middot; In preparation</span>
+        <span class="pub-source">Adrian König &middot; <a href="https://www.vwi.unibe.ch/ueber_uns/personen/leutenegger_wjera_yell/index_ger.html" target="_blank" rel="noopener noreferrer">Wjera Leutenegger</a> &middot; In preparation</span>
       </div>
 
       <div class="publication">
         <span class="pub-title">OpenCaseLaw Meta-Harness: Advancing Open-Source Legal Tech in Switzerland</span><br>
-        <span class="pub-source">Adrian König &middot; <a href="https://www.linkedin.com/in/arnehol/" target="_blank">Arne Holicki</a> &middot; <a href="https://jonashertner.com" target="_blank">Jonas Hertner</a> &middot; In preparation</span>
+        <span class="pub-source">Adrian König &middot; <a href="https://www.linkedin.com/in/arnehol/" target="_blank" rel="noopener noreferrer">Arne Holicki</a> &middot; <a href="https://jonashertner.com" target="_blank" rel="noopener noreferrer">Jonas Hertner</a> &middot; In preparation</span>
       </div>
 
       <div class="publication">
         <span class="pub-title">Konventionalstrafen</span><br>
-        <span class="pub-source">Adrian König &middot; <a href="https://cms.law/de/che/people/maximilian-hauser" target="_blank">Maximilian Hauser</a> &middot; In preparation</span>
+        <span class="pub-source">Adrian König &middot; <a href="https://cms.law/de/che/people/maximilian-hauser" target="_blank" rel="noopener noreferrer">Maximilian Hauser</a> &middot; In preparation</span>
       </div>
     </section>
 
@@ -363,79 +153,79 @@
 
       <div class="publication">
         <span class="pub-title" lang="de">Der englische «Letter before Action» – Systematik, Funktion und mögliche Auswirkungen im schweizerischen Zivilverfahren</span><svg class="paywall" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Behind paywall"><title>Behind paywall</title><rect x="4" y="11" width="16" height="10" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><br>
-        <span class="pub-source">Adrian König &middot; <a href="https://www.lalive.law/robert-bradshaw/" target="_blank">Robert Bradshaw</a> &middot; <a href="https://www.dike.ch/zeitschriften/zzz" target="_blank">ZZZ</a> 72/2025, 361–371</span>
+        <span class="pub-source">Adrian König &middot; <a href="https://www.lalive.law/robert-bradshaw/" target="_blank" rel="noopener noreferrer">Robert Bradshaw</a> &middot; <a href="https://www.dike.ch/zeitschriften/zzz" target="_blank" rel="noopener noreferrer">ZZZ</a> 72/2025, 361–371</span>
         <a class="pub-download" href="publications/koenig-bradshaw-zzz-2025.pdf" download>Preview</a>
       </div>
 
       <div class="publication">
         <span class="pub-title">Private Claimants in Swiss Money Laundering Proceedings: Unlocking Evidence and Freezing Assets</span><svg class="paywall" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Behind paywall"><title>Behind paywall</title><rect x="4" y="11" width="16" height="10" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><br>
-        <span class="pub-source"><a href="https://www.lalive.law/benoit-a-mauron/" target="_blank">Benoît Mauron</a> &middot; <a href="https://www.lalive.law/adam-el-hakim/" target="_blank">Adam El-Hakim</a> &middot; Adrian König &middot; <a href="https://www.lexology.com/search?q=Private+Claimants+Swiss+Money+Laundering+LALIVE" target="_blank">Lexology (online)</a>, 14 August 2025</span>
+        <span class="pub-source"><a href="https://www.lalive.law/benoit-a-mauron/" target="_blank" rel="noopener noreferrer">Benoît Mauron</a> &middot; <a href="https://www.lalive.law/adam-el-hakim/" target="_blank" rel="noopener noreferrer">Adam El-Hakim</a> &middot; Adrian König &middot; <a href="https://www.lexology.com/search?q=Private+Claimants+Swiss+Money+Laundering+LALIVE" target="_blank" rel="noopener noreferrer">Lexology (online)</a>, 14 August 2025</span>
         <a class="pub-download" href="publications/mauron-elhakim-koenig-lexology-2025.pdf" download>Preview</a>
       </div>
 
       <div class="publication">
         <span class="pub-title" lang="de">Gen-Z drängt ins Recht: Erste empirische Insights</span><br>
-        <span class="pub-source">Adrian König &middot; <a href="https://www.ergon.ch/de/ueber-ergon/team/roman-wixinger" target="_blank">Roman Wixinger</a> &middot; LAWSTYLE Nr. 19, 2025, 8–11</span>
+        <span class="pub-source">Adrian König &middot; <a href="https://www.ergon.ch/de/ueber-ergon/team/roman-wixinger" target="_blank" rel="noopener noreferrer">Roman Wixinger</a> &middot; LAWSTYLE Nr. 19, 2025, 8–11</span>
         <a class="pub-download" href="publications/koenig-wixinger-lawstyle-2025.pdf" download>Full PDF</a>
       </div>
 
       <div class="publication">
         <span class="pub-title">Swiss Law Students' Employer Expectations – A First Empirical Insight</span><svg class="paywall" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Behind paywall"><title>Behind paywall</title><rect x="4" y="11" width="16" height="10" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><br>
-        <span class="pub-source">Adrian König &middot; <a href="https://www.ergon.ch/de/ueber-ergon/team/roman-wixinger" target="_blank">Roman Wixinger</a> &middot; <a href="https://jusletter.weblaw.ch/juslissues/2025/1240/swiss-law-students--_8b29c1d771.html__ONCE&login=false" target="_blank">Jusletter, 12 May 2025</a></span>
+        <span class="pub-source">Adrian König &middot; <a href="https://www.ergon.ch/de/ueber-ergon/team/roman-wixinger" target="_blank" rel="noopener noreferrer">Roman Wixinger</a> &middot; <a href="https://jusletter.weblaw.ch/juslissues/2025/1240/swiss-law-students--_8b29c1d771.html__ONCE&login=false" target="_blank" rel="noopener noreferrer">Jusletter, 12 May 2025</a></span>
         <a class="pub-download" href="publications/koenig-wixinger-jusletter-05-2025-first-page.pdf" download>Preview</a>
       </div>
 
       <div class="publication">
         <span class="pub-title" lang="de">Corporate Climate Litigation – Klimahaftungsklagen gegen Unternehmen im Kontext des internationalen Zivilverfahrens- und Privatrechts</span><br>
-        <span class="pub-source">Adrian König &middot; <a href="https://www.caemmerer-lenz.de/anwaelte/benjamin-sommerhalder/" target="_blank">Benjamin Sommerhalder</a> &middot; <a href="https://www.dike.ch/zeitschriften/ajp-pja" target="_blank">AJP/PJA</a> 3/2025, 261–273</span>
+        <span class="pub-source">Adrian König &middot; <a href="https://www.caemmerer-lenz.de/anwaelte/benjamin-sommerhalder/" target="_blank" rel="noopener noreferrer">Benjamin Sommerhalder</a> &middot; <a href="https://www.dike.ch/zeitschriften/ajp-pja" target="_blank" rel="noopener noreferrer">AJP/PJA</a> 3/2025, 261–273</span>
         <a class="pub-download" href="publications/koenig-sommerhalder-ajp-03-2025.pdf" download>Full PDF</a>
       </div>
 
       <div class="publication">
         <span class="pub-title" lang="de">Fristenwirrwarr bei der Auskunfts- und Einsichtsklage (Art. 697b OR)</span><svg class="paywall" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Behind paywall"><title>Behind paywall</title><rect x="4" y="11" width="16" height="10" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><br>
-        <span class="pub-source">Adrian König &middot; <a href="https://www.lalive.law/andre-brunschweiler/" target="_blank">André Brunschweiler</a> &middot; <a href="https://www.legalis.ch/de/legalis-brief/gesellschaftsrecht/fristenwirrwarr-bei-der-auskunfts-und-einsichtsklage-art-697b-or/" target="_blank">legalis brief GesR 2/25</a>, Leitartikel</span>
+        <span class="pub-source">Adrian König &middot; <a href="https://www.lalive.law/andre-brunschweiler/" target="_blank" rel="noopener noreferrer">André Brunschweiler</a> &middot; <a href="https://www.legalis.ch/de/legalis-brief/gesellschaftsrecht/fristenwirrwarr-bei-der-auskunfts-und-einsichtsklage-art-697b-or/" target="_blank" rel="noopener noreferrer">legalis brief GesR 2/25</a>, Leitartikel</span>
         <a class="pub-download" href="publications/koenig-brunschweiler-legalis-2025.pdf" download>Preview</a>
       </div>
 
       <div class="publication">
         <span class="pub-title" lang="de">Verfahrensleitung an der Generalversammlung – Vorschläge zum Umgang mit mehreren Anträgen</span><svg class="paywall" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Behind paywall"><title>Behind paywall</title><rect x="4" y="11" width="16" height="10" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><br>
-        <span class="pub-source"><a href="https://kellerhals-carrard.ch/de/team/marc-hanslin" target="_blank">Marc Hanslin</a> &middot; Adrian König &middot; <a href="https://www.legalis.ch/de/legalis-brief/gesellschaftsrecht/verfahrensleitung-an-der-generalversammlung-vorschlaege-zum-umgang-mit-mehreren-antraegen/" target="_blank">legalis brief GesR 7/24</a>, Leitartikel</span>
+        <span class="pub-source"><a href="https://kellerhals-carrard.ch/de/team/marc-hanslin" target="_blank" rel="noopener noreferrer">Marc Hanslin</a> &middot; Adrian König &middot; <a href="https://www.legalis.ch/de/legalis-brief/gesellschaftsrecht/verfahrensleitung-an-der-generalversammlung-vorschlaege-zum-umgang-mit-mehreren-antraegen/" target="_blank" rel="noopener noreferrer">legalis brief GesR 7/24</a>, Leitartikel</span>
         <a class="pub-download" href="publications/hanslin-koenig-legalis-2024.pdf" download>Preview</a>
       </div>
 
       <div class="publication">
         <span class="pub-title" lang="de">Grenzen der ehelichen Verfügungsbeschränkung – BGer 5A_503/2023 vom 15. Juli 2024</span><svg class="paywall" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Behind paywall"><title>Behind paywall</title><rect x="4" y="11" width="16" height="10" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><br>
-        <span class="pub-source">Adrian König &middot; <a href="https://www.iusfocus.ch" target="_blank">Ius focus</a> 10/2024, Nr. 243</span>
+        <span class="pub-source">Adrian König &middot; <a href="https://www.iusfocus.ch" target="_blank" rel="noopener noreferrer">Ius focus</a> 10/2024, Nr. 243</span>
         <a class="pub-download" href="publications/koenig-iusfocus-10-2024.pdf" download>Preview</a>
       </div>
 
       <div class="publication">
         <span class="pub-title" lang="de">Iudex non calculat? Synthese von Recht und Mathematik</span><svg class="paywall" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Behind paywall"><title>Behind paywall</title><rect x="4" y="11" width="16" height="10" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><br>
-        <span class="pub-source">Adrian König &middot; <a href="https://www.ergon.ch/de/ueber-ergon/team/roman-wixinger" target="_blank">Roman Wixinger</a> &middot; <a href="https://kellerhals-carrard.ch/de/team/cornelia-stengel?cv" target="_blank">Cornelia Stengel</a> &middot; <a href="https://jusletter.weblaw.ch/juslissues/2024/1209/iudex-non-calculat-_9dba31eb34.html__ONCE&login=false" target="_blank">Jusletter, 9 September 2024</a></span>
+        <span class="pub-source">Adrian König &middot; <a href="https://www.ergon.ch/de/ueber-ergon/team/roman-wixinger" target="_blank" rel="noopener noreferrer">Roman Wixinger</a> &middot; <a href="https://kellerhals-carrard.ch/de/team/cornelia-stengel?cv" target="_blank" rel="noopener noreferrer">Cornelia Stengel</a> &middot; <a href="https://jusletter.weblaw.ch/juslissues/2024/1209/iudex-non-calculat-_9dba31eb34.html__ONCE&login=false" target="_blank" rel="noopener noreferrer">Jusletter, 9 September 2024</a></span>
         <a class="pub-download" href="publications/koenig-wixinger-stengel-jusletter-09-2024.pdf" download>Preview</a>
       </div>
 
       <div class="publication">
         <span class="pub-title" lang="de">Holacracy: Management ohne Manager? Aktienrechtliche Verantwortlichkeit, Geschäftsführung und Compliance-Risiken in holokratisch strukturierten Gesellschaften</span><br>
-        <span class="pub-source">Adrian König &middot; <a href="https://www.geskr.ch" target="_blank">GesKR</a> 3/2024, 417–426</span>
+        <span class="pub-source">Adrian König &middot; <a href="https://www.geskr.ch" target="_blank" rel="noopener noreferrer">GesKR</a> 3/2024, 417–426</span>
         <a class="pub-download" href="publications/koenig-holacracy-gesk-r-03-2024.pdf" download>Full PDF</a>
       </div>
 
       <div class="publication">
         <span class="pub-title" lang="de">Bundesgericht, I. öffentlich-rechtliche Abteilung, Urteil 1B_174/2023 vom 21. April 2023</span><br>
-        <span class="pub-source">Adrian König &middot; <a href="https://www.dike.ch/zeitschriften/ajp-pja" target="_blank">AJP/PJA</a> 6/2024, 620–624</span>
+        <span class="pub-source">Adrian König &middot; <a href="https://www.dike.ch/zeitschriften/ajp-pja" target="_blank" rel="noopener noreferrer">AJP/PJA</a> 6/2024, 620–624</span>
         <a class="pub-download" href="publications/koenig-ajp-06-2024.pdf" download>Full PDF</a>
       </div>
 
       <div class="publication">
         <span class="pub-title" lang="de">Décharge und Corporate Governance</span><br>
-        <span class="pub-source">Adrian König &middot; <a href="https://www.geskr.ch" target="_blank">GesKR</a> 4/2023, 496–504</span>
+        <span class="pub-source">Adrian König &middot; <a href="https://www.geskr.ch" target="_blank" rel="noopener noreferrer">GesKR</a> 4/2023, 496–504</span>
         <a class="pub-download" href="publications/koenig-gesk-r-04-2023.pdf" download>Full PDF</a>
       </div>
 
       <div class="publication">
         <span class="pub-title" lang="de">Prozessieren gegen Lloyd's Syndikate – BGer 4A_323/2022 vom 5. Dezember 2022</span><svg class="paywall" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Behind paywall"><title>Behind paywall</title><rect x="4" y="11" width="16" height="10" rx="1.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><br>
-        <span class="pub-source"><a href="https://kellerhals-carrard.ch/de/team/laura-manz" target="_blank">Laura Manz</a> &middot; Adrian König &middot; <a href="https://www.iusfocus.ch" target="_blank">Ius focus</a> 3/2023, Nr. 67</span>
+        <span class="pub-source"><a href="https://kellerhals-carrard.ch/de/team/laura-manz" target="_blank" rel="noopener noreferrer">Laura Manz</a> &middot; Adrian König &middot; <a href="https://www.iusfocus.ch" target="_blank" rel="noopener noreferrer">Ius focus</a> 3/2023, Nr. 67</span>
         <a class="pub-download" href="publications/manz-koenig-iusfocus-03-2023.pdf" download>Preview</a>
       </div>
     </section>
@@ -445,26 +235,26 @@
 
       <div class="publication">
         <span class="pub-title">LexCraft</span><br>
-        <span class="pub-source"><a href="https://www.linkedin.com/in/raphael-zemp/" target="_blank">Raphael Zemp</a> (Lead) &middot; <a href="https://www.ergon.ch/de/ueber-ergon/team/roman-wixinger" target="_blank">Roman Wixinger</a> &middot; Adrian König</span>
+        <span class="pub-source"><a href="https://www.linkedin.com/in/raphael-zemp/" target="_blank" rel="noopener noreferrer">Raphael Zemp</a> (Lead) &middot; <a href="https://www.ergon.ch/de/ueber-ergon/team/roman-wixinger" target="_blank" rel="noopener noreferrer">Roman Wixinger</a> &middot; Adrian König</span>
         <div class="pub-links">
-          <a class="pub-video" href="https://www.ergon.ch/en/news/2025/lexcraft-making-law-understandable" target="_blank">&#9654; Read more</a>
+          <a class="pub-video" href="https://www.ergon.ch/en/news/2025/lexcraft-making-law-understandable" target="_blank" rel="noopener noreferrer">&#9654; Read more</a>
         </div>
       </div>
 
       <div class="publication">
         <span class="pub-title">Swiss Universities Championships Surfing 2021</span><br>
-        <span class="pub-source"><a href="https://www.linkedin.com/in/timlampart/" target="_blank">Tim Lampart</a> (Lead) &middot; Adrian König (Co-Lead) &middot; <a href="https://www.linkedin.com/in/joeladank/" target="_blank">Joel Adank</a> &middot; <a href="https://www.linkedin.com/in/benediktnann/" target="_blank">Benedikt Nann</a></span>
+        <span class="pub-source"><a href="https://www.linkedin.com/in/timlampart/" target="_blank" rel="noopener noreferrer">Tim Lampart</a> (Lead) &middot; Adrian König (Co-Lead) &middot; <a href="https://www.linkedin.com/in/joeladank/" target="_blank" rel="noopener noreferrer">Joel Adank</a> &middot; <a href="https://www.linkedin.com/in/benediktnann/" target="_blank" rel="noopener noreferrer">Benedikt Nann</a></span>
         <div class="pub-links">
-          <a class="pub-video" href="https://www.youtube.com/watch?v=qDUKyVk1bk4" target="_blank">&#9654; Watch on YouTube</a>
+          <a class="pub-video" href="https://www.youtube.com/watch?v=qDUKyVk1bk4" target="_blank" rel="noopener noreferrer">&#9654; Watch on YouTube</a>
         </div>
       </div>
       <div class="publication">
         <span class="pub-title">Academic Surfcamps</span><br>
-        <span class="pub-source">Adrian König (Founder &amp; Lead) &middot; Max Hesse (Co-Lead) &middot; <a href="https://www.linkedin.com/in/timlampart/" target="_blank">Tim Lampart</a> &middot; <a href="https://www.linkedin.com/in/joeladank/" target="_blank">Joel Adank</a></span>
+        <span class="pub-source">Adrian König (Founder &amp; Lead) &middot; Max Hesse (Co-Lead) &middot; <a href="https://www.linkedin.com/in/timlampart/" target="_blank" rel="noopener noreferrer">Tim Lampart</a> &middot; <a href="https://www.linkedin.com/in/joeladank/" target="_blank" rel="noopener noreferrer">Joel Adank</a></span>
         <div class="pub-links">
-          <a class="pub-video" href="https://www.youtube.com/watch?v=uUBBx8Af2kA" target="_blank">&#9654; Watch on YouTube</a>
-          <a class="pub-video" href="https://www.youtube.com/watch?v=iDRKrQRt7kE" target="_blank">&#9654; Watch on YouTube</a>
-          <a class="pub-video" href="https://www.youtube.com/watch?v=UzwrTEa0H90" target="_blank">&#9654; Watch on YouTube</a>
+          <a class="pub-video" href="https://www.youtube.com/watch?v=uUBBx8Af2kA" target="_blank" rel="noopener noreferrer">&#9654; Watch on YouTube</a>
+          <a class="pub-video" href="https://www.youtube.com/watch?v=iDRKrQRt7kE" target="_blank" rel="noopener noreferrer">&#9654; Watch on YouTube</a>
+          <a class="pub-video" href="https://www.youtube.com/watch?v=UzwrTEa0H90" target="_blank" rel="noopener noreferrer">&#9654; Watch on YouTube</a>
         </div>
       </div>
     </section>
