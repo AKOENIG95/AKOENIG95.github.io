@@ -109,7 +109,7 @@ img { display: block; max-width: 100%; }
    HERO — split: portrait left, name right, dark
    --------------------------------------------------------- */
 .hero {
-  min-height: 72vh;
+  min-height: max(960px, 100vh);
   background: var(--bg-dark);
   color: #fff;
   position: relative;
