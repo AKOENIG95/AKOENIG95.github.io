@@ -424,6 +424,15 @@ section.block.dark .eyebrow { opacity: 0.55; }
   filter: grayscale(100%);
   transition: transform 6s ease;
 }
+
+/* Carousel — multiple images cross-fade in place */
+.interlude.carousel img {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+.interlude.carousel img.active { opacity: 1; }
 .interlude figcaption {
   position: absolute;
   bottom: 28px;

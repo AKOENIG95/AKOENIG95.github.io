@@ -370,9 +370,9 @@
     </div>
   </section>
 
-  <!-- ========== INTERLUDE · STORM ========== -->
-  <figure class="interlude fade-edges fade-bot-dark">
-    <img src="assets/interlude-storm.jpg" alt="Heavy Atlantic swell, Portugal" loading="lazy">
+  <!-- ========== INTERLUDE · CAROUSEL ========== -->
+  <figure class="interlude fade-edges fade-bot-dark carousel" id="hero-carousel">
+    <img src="assets/interlude-storm.jpg" alt="Heavy Atlantic swell, Portugal" class="active" loading="lazy">
     <figcaption>Surftrip Portugal &middot; Heavy swell</figcaption>
   </figure>
 
@@ -401,6 +401,20 @@
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }});
     }, { rootMargin: '0px 0px -8% 0px', threshold: 0.05 });
     targets.forEach(t => io.observe(t));
+
+    // Carousel — auto-rotate slides every 3 seconds with cross-fade
+    const carousel = document.getElementById('hero-carousel');
+    if (carousel) {
+      const slides = carousel.querySelectorAll('img');
+      if (slides.length > 1) {
+        let current = 0;
+        setInterval(() => {
+          slides[current].classList.remove('active');
+          current = (current + 1) % slides.length;
+          slides[current].classList.add('active');
+        }, 3000);
+      }
+    }
   </script>
 
   <script data-goatcounter="https://AKOENIG95.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
