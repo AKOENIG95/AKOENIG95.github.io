@@ -167,7 +167,7 @@ img { display: block; max-width: 100%; }
 }
 .hero-content h1 {
   font-family: var(--sans);
-  font-size: clamp(46px, 7.6vw, 116px);
+  font-size: clamp(54px, 9.4vw, 130px);
   font-weight: 500;
   letter-spacing: 0.01em;
   line-height: 1;
