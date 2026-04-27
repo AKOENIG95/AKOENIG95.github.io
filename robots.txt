@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
+Disallow: /_archive/
+Disallow: /info.docx
+Disallow: /style-legacy.css
 
 Sitemap: https://adriankoenig.ch/sitemap.xml
