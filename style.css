@@ -121,7 +121,7 @@ img { display: block; max-width: 100%; }
 .hero-portrait {
   position: absolute;
   top: 0;
-  left: clamp(0px, 4vw, 72px);
+  left: 0;
   width: 600px;
   height: 940px;
   z-index: 1;
@@ -134,20 +134,6 @@ img { display: block; max-width: 100%; }
   object-fit: cover;
   object-position: left top;
   filter: grayscale(100%);
-  -webkit-mask-image: linear-gradient(
-    to right,
-    transparent 0,
-    black 9%,
-    black 88%,
-    transparent 100%
-  );
-          mask-image: linear-gradient(
-    to right,
-    transparent 0,
-    black 9%,
-    black 88%,
-    transparent 100%
-  );
 }
 /* Centered name+tagline area takes available vertical space */
 .hero-content {
