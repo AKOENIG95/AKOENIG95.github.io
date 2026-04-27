@@ -318,9 +318,7 @@ section.block.dark .eyebrow { opacity: 0.55; }
   letter-spacing: 0.32em;
   text-transform: uppercase;
   color: var(--ink);
-  margin-bottom: 48px;
-  padding-top: 36px;
-  border-top: 1px solid var(--line);
+  margin-bottom: 32px;
 }
 .heading {
   font-family: var(--sans);
