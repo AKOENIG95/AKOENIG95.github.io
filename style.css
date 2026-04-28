@@ -186,8 +186,8 @@ img { display: block; max-width: 100%; }
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -0.072em;
-  transform: translateX(-50%);
+  bottom: -0.064em;
+  transform: translateX(calc(-50% - 1px));
   width: 0.12em;
   height: 0.12em;
   background: currentColor;
