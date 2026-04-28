@@ -186,10 +186,10 @@ img { display: block; max-width: 100%; }
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 0.04em;
+  bottom: 0.10em;
   transform: translateX(-50%);
-  width: 0.11em;
-  height: 0.11em;
+  width: 0.075em;
+  height: 0.075em;
   background: currentColor;
   border-radius: 50%;
 }
