@@ -177,6 +177,9 @@ img { display: block; max-width: 100%; }
   white-space: nowrap;
   text-transform: uppercase;
 }
+.hero-content h1 .name-word {
+  white-space: nowrap;
+}
 .hero-content h1 .i-below {
   position: relative;
   display: inline-block;
