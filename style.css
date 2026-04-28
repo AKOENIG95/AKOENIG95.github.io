@@ -186,7 +186,7 @@ img { display: block; max-width: 100%; }
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -0.14em;
+  bottom: -0.08em;
   transform: translateX(-50%);
   width: 0.075em;
   height: 0.075em;
