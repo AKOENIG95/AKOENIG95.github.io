@@ -336,7 +336,7 @@ section.block.dark .eyebrow { opacity: 0.55; }
   color: var(--ink);
   margin-bottom: 32px;
 }
-#out-of-office { padding-bottom: 24px; }
+#out-of-office { padding-bottom: 8px; }
 #out-of-office .eyebrow { margin-bottom: 0; }
 .heading {
   font-family: var(--sans);
