@@ -178,6 +178,8 @@ img { display: block; max-width: 100%; }
 }
 .hero-content h1 .i-below {
   position: relative;
+  display: inline-block;
+  vertical-align: baseline;
 }
 .hero-content h1 .i-below::after {
   content: "";
