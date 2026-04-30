@@ -32,7 +32,7 @@
       };
       const start = () => {
         if (timer || !inView || document.hidden) return;
-        timer = setInterval(advance, 2000);
+        timer = setInterval(advance, 1000);
       };
       const stop = () => {
         if (timer) { clearInterval(timer); timer = null; }
