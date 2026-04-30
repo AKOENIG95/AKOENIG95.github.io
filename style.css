@@ -416,6 +416,11 @@ footer.foot .foot-mark {
   color: var(--ink);
   font-size: 12px;
 }
+footer.foot .foot-mark img {
+  display: block;
+  height: 13px;
+  width: auto;
+}
 footer.foot .foot-meta {
   text-align: center;
   color: var(--muted);
